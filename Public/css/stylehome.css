@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+/* Style untuk background banner */
+.container-fluid {
+    background-image: url("../img/picgedung.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 768px;
+    /* Anda bisa menggunakan vh untuk responsif */
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 0;
+}
+
+/* Style untuk konten dalam banner */
+.banner-content {
+    background: linear-gradient(90deg, rgba(70, 7, 78, 1) 0%, rgba(25, 123, 208, 0.8) 80%);
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 65%;
+    /* Pusatkan secara vertikal */
+    left: 5%;
+    /* Pusatkan secara horizontal */
+    width: 90%;
+    /* Menggunakan persentase untuk responsif */
+    max-width: 621px;
+    /* Maksimal lebar */
+    height: auto;
+    /* Otomatis menyesuaikan tinggi */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style untuk teks */
+.banner-content h2 {
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+}
+
+/* Menambahkan garis putih di sebelah kiri */
+.banner-content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(30px, -70%);
+    width: 1px;
+    height: 140px;
+    background-color: white;
+}
+
+/* Style untuk tombol */
+.banner-content .btn {
+    padding: 10px 20px;
+    transition: background 0.3s;
+    width: 210px;
+    height: 45px;
+    font-size: 15px;
+}
+
+/* Style untuk ikon panah */
+.banner-content .btn .arrow {
+    font-size: 16px;
+    color: white;
+    margin-left: 5px;
+}
+
+/* Hover effect untuk tombol dan panah */
+.banner-content .btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.banner-content .btn .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.text-custom {
+    width: 100%;
+    /* Menggunakan 100% untuk responsif */
+    max-width: 285px;
+    /* Maksimal lebar */
+    height: auto;
+    /* Otomatis menyesuaikan tinggi */
+    margin-right: 10px;
+}
+
+/* Media query untuk responsif */
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column;
+        /* Mengubah menjadi kolom pada layar kecil */
+        align-items: center;
+        /* Pusatkan item */
+    }
+
+    .banner-content h2 {
+        font-size: 18px;
+        /* Mengurangi ukuran font untuk layar kecil */
+    }
+
+    .banner-content .btn {
+        width: 100%;
+        /* Tombol mengambil lebar penuh */
+        margin-top: 10px;
+        /* Jarak atas untuk tombol */
+    }
+}
+
+.container-tentang-kami {
+    width: 90%;
+    /* Use percentage for responsiveness */
+    max-width: 1140px;
+    /* Set a maximum width */
+    height: auto;
+    /* Allow height to adjust based on content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 70px 0;
+    /* Use padding for vertical spacing */
+    flex-direction: column;
+    /* Align items in a column */
+}
+
+.judul {
+    font-size: 24px;
+    color: #4A4A4A;
+}
+
+.text-p {
+    margin: auto;
+    width: 100%;
+    /* Use 100% width for responsiveness */
+    max-width: 700px;
+    /* Set a maximum width */
+    font-size: 18px;
+    color: #4A4A4A;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.custom-hr-new {
+    width: 90%;
+    /* Use percentage for responsiveness */
+    max-width: 1140px;
+    /* Set a maximum width */
+    height: 2px;
+    background-color: #EAEAEA;
+    /* Warna garis */
+    border: none;
+    /* Hilangkan border default */
+    margin: 70px auto;
+    /* Center horizontally with auto margins */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .judul {
+        font-size: 20px;
+        /* Decrease font size on smaller screens */
+    }
+
+    .text-p {
+        font-size: 16px;
+        /* Decrease font size on smaller screens */
+    }
+
+    .custom-hr-new {
+        margin: 50px auto;
+        /* Adjust margins for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .judul {
+        font-size: 18px;
+        /* Further decrease font size on mobile */
+    }
+
+    .text-p {
+        font-size: 14px;
+        /* Further decrease font size on mobile */
+    }
+}
+
+.container-news {
+    width: 100%;
+    /* Ubah menjadi 100% untuk responsif */
+    max-width: 1120px;
+    /* Tetapkan lebar maksimum */
+    height: auto;
+    /* Ubah untuk menyesuaikan tinggi otomatis */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.section-title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #4A4A4A;
+    margin-bottom: 50px;
+}
+
+.custom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Menampilkan 4 kolom pada awalnya */
+    /* Tambahkan jarak antar kolom */
+
+}
+
+/* Media Query untuk Responsif */
+
+@media (max-width: 768px) {
+    .custom-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 kolom untuk layar antara 480px - 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-grid {
+        grid-template-columns: 1fr;
+        /* 1 kolom untuk layar di bawah 480px */
+    }
+}
+
+.card-container {
+    width: 100%;
+    /* Ubah menjadi 100% untuk responsif */
+    max-width: 360px;
+    /* Tetapkan lebar maksimum */
+    max-height: 270px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-overlay {
+    position: relative;
+    /* Tambahkan posisi relatif */
+}
+
+.card-overlay::before {
+    content: "";
+    /* Tambahkan konten agar overlay muncul */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(93deg, rgb(70, 7, 78) 0%, rgba(70, 7, 78, 0.5) 15%, rgba(70, 7, 78, 0.3) 35%, rgba(70, 7, 78, 0) 50%);
+    color: white;
+    transition: background 0.3s ease;
+    border-radius: 6px;
+    z-index: 1;
+    /* Pastikan overlay berada di atas gambar */
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.text-card {
+    position: absolute;
+    left: 0;
+    top: 85%;
+    transform: translate(30px, -50%);
+    border: none;
+    outline: none;
+    z-index: 2;
+    /* Pastikan teks berada di atas overlay */
+    color: #FFFFFF;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::before {
+    content: "";
+    position: absolute;
+    transform: translate(1px, -110%);
+    width: 1px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.container-mitra {
+    width: 100%;
+    max-width: 860px;
+    /* Tetapkan lebar maksimum */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.text-mitra {
+    width: 100%;
+    /* Ubah menjadi 100% agar responsif */
+}
+
+.text-mitra h1 {
+    color: #4A4A4A;
+    font-size: 24px;
+}
+
+.custom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Menampilkan 4 kolom pada awalnya */
+    gap: 10px;
+    /* Jarak antar kolom dan baris */
+    width: 100%;
+    /* Mengatur lebar grid menjadi 100% */
+    margin-top: 20px;
+    /* Tambahkan margin atas untuk jarak dari judul */
+}
+
+/* Media Query untuk Responsif */
+
+@media (max-width: 768px) {
+    .custom-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 kolom untuk layar antara 480px - 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-grid {
+        grid-template-columns: 1fr;
+        /* 1 kolom untuk layar di bawah 480px */
+    }
+}
+
+.mitracard-container {
+    width: 200px;
+    /* Ukuran lebar awal */
+    height: 113px;
+    /* Ukuran tinggi awal */
+    border: 1px ridge #DDDDDD;
+    /* Set width, style, and color */
+    border-radius: 6px;
+    overflow: hidden;
+    /* Pastikan gambar tidak melampaui border */
+    margin: auto;
+    /* Center the card */
+}
+
+.custom-grid-mitra {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Menampilkan 4 kolom pada awalnya */
+    gap: 10px;
+    /* Jarak antar kolom dan baris */
+    width: 100%;
+    /* Mengatur lebar grid menjadi 100% */
+    margin-top: 20px;
+    /* Tambahkan margin atas untuk jarak dari judul */
+}
+
+
+.card-image-mitra {
+    width: 100%;
+    height: 100%;
+    /* Pastikan gambar memenuhi kontainer */
+    object-fit: contain;
+    /* Pastikan gambar mengisi area dengan baik */
+}
+
+/* Responsif untuk ukuran card */
+@media (max-width: 768px) {
+    .custom-grid-mitra {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 kolom untuk layar antara 480px - 768px */
+    }
+
+    .mitracard-container {
+        width: 150px;
+        /* Ukuran lebar untuk layar kecil */
+        height: 84px;
+        /* Ukuran tinggi untuk layar kecil */
+    }
+
+    .card-image-mitra {
+        width: 100%;
+        /* Membuat gambar memenuhi kontainer */
+        height: auto;
+        /* Biarkan tinggi otomatis untuk menjaga rasio aspek */
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-grid-mitra {
+        grid-template-columns: 1fr;
+        /* 1 kolom untuk layar di bawah 480px */
+    }
+
+    .mitracard-container {
+        width: 100%;
+        /* Membuat lebar 100% pada layar yang sangat kecil */
+        height: auto;
+        /* Biarkan tinggi otomatis untuk menjaga rasio aspek */
+    }
+
+    .card-image-mitra {
+        max-width: 100px;
+        /* Mengatur ukuran maksimum gambar untuk layar kecil */
+        height: auto;
+        /* Biarkan tinggi otomatis untuk menjaga rasio aspek */
+    }
+}
+
+.banner-info {
+    background: linear-gradient(90deg, rgba(70, 7, 78, 1) 0%, rgba(25, 123, 208, 0.8) 80%);
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 120px auto 0;
+    border-radius: 6px;
+    padding: 20px;
+    width: 100%;
+    max-width: 860px;
+    height: auto;
+    /* Allow height to adjust based on content */
+}
+
+.text-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-info h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.info-p {
+    line-height: 24px;
+    margin-top: 5px;
+}
+
+.info-p p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.container-text {
+    margin-left: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .banner-info {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items */
+        text-align: center;
+        /* Center text */
+    }
+
+    .text-info {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    .text-info h2 {
+        font-size: 18px;
+        /* Adjust font size */
+    }
+
+    .info-p p {
+        font-size: 14px;
+        /* Adjust font size */
+    }
+
+    .btn-start-consultation {
+        margin-top: 10px;
+        /* Add space above the button */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-info h2 {
+        font-size: 16px;
+        /* Further adjust font size for very small screens */
+    }
+
+    .info-p p {
+        font-size: 12px;
+        /* Further adjust font size */
+    }
+}
+
+.btn-start-consultation {
+    height: 100%;
+    /* Set height to fill the parent container */
+    display: flex;
+    /* Use flexbox for button */
+    align-items: center;
+    /* Center the button text vertically */
+    justify-content: center;
+    /* Center the button text horizontally */
+}
+
+.btn-info {
+    border: 1px solid white;
+    border-radius: 22.5px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 230px;
+    height: 45px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.btn-info:hover {
+    background-color: white;
+    color: #4A4A4A;
+}
+
+.container-artikel {
+    width: 90%;
+    max-width: 1140px;
+    /* Maintain max width */
+    margin: 90px auto;
+    /* Center and add top margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-artikel h1 {
+    color: #4A4A4A;
+    font-size: 24px;
+}
+
+.custom-grid-artikel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Responsive grid */
+    gap: 20px;
+    /* Add gap between cards */
+    width: 100%;
+    /* Full width */
+    max-width: 800px;
+    height: auto;
+    /* Allow height to adjust based on content */
+}
+
+.card-container-artikel {
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    /* Reduce margin for better spacing */
+    width: 360px;
+    height: 195px;
+    display: flex;
+    /* Use flexbox to center content */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+}
+
+.text-box {
+    padding-top: 10px;
+}
+
+.text-card-artikel {
+    color: #4A4A4A;
+    font-size: 18px;
+    /* Center text */
+}
+
+.btn-artikel {
+    border: 1px solid transparent;
+    border-radius: 22.5px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 230px;
+    height: 45px;
+    background: linear-gradient(90deg, rgba(70, 7, 78, 1) 10%, rgba(25, 123, 208, 0.8) 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    /* Center button with margin */
+    position: relative;
+}
+
+.btn-artikel:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 22.5px;
+    border: 1px solid rgba(70, 7, 78, 1);
+    pointer-events: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    /* Add some space above the button */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .custom-grid-artikel {
+        grid-template-columns: repeat(1, 1fr);
+        /* Change to single column */
+    }
+
+    .container-artikel {
+        margin-top: 60px;
+        /* Adjust top margin for smaller screens */
+        justify-content: center;
+        /* Center vertically */
+        align-items: center;
+        /* Center horizontally */
+    }
+
+    .section-artikel h1 {
+        font-size: 20px;
+        /* Smaller font size for headings */
+        margin: auto;
+    }
+
+    .text-card-artikel {
+        font-size: 16px;
+        /* Smaller font size for text */
+        margin: auto;
+    }
+
+    .btn-artikel {
+        width: 100%;
+        /* Full width button on smaller screens */
+        max-width: 230px;
+        /* Maintain max width */
+    }
+}
+
+.container-contact {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.title-section h1 {
+    font-size: 24px;
+    color: #4A4A4A;
+}
+
+.row-contact {
+    margin-top: 20px;
+}
+
+.row-contact h2 {
+    color: #4A4A4A;
+    font-size: 18px;
+}
+
+.info-contact {
+    color: #4A4A4A;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.custom-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.custom-list-item {
+    margin: 0 1rem;
+}
+
+.rectangle-item,
+.pesan-item {
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 200px;
+    height: 45px;
+    text-decoration: none;
+}
+
+.rectangle-item {
+    background: linear-gradient(80deg, rgba(70, 7, 78, 0.7), rgba(25, 123, 208, 0.5));
+}
+
+.pesan-item {
+    background-color: #FFFFFF;
+    font-size: 15px;
+    border: 1px solid purple !important;
+}
+
+.text-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: inherit;
+    /* Menggunakan warna teks yang ada */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container-contact {
+        padding: 10px;
+    }
+
+    .title-section h1 {
+        font-size: 20px;
+    }
+
+    .row-contact h2 {
+        font-size: 16px;
+    }
+
+    .info-contact {
+        font-size: 14px;
+    }
+
+    .custom-list {
+        flex-direction: column;
+        /* Mengubah menjadi kolom pada layar kecil */
+        align-items: center;
+    }
+
+    .custom-list-item {
+        margin: 10px 0;
+        /* Jarak antar item vertikal */
+    }
+
+    .rectangle-item,
+    .pesan-item {
+        width: 90%;
+        /* Mengatur lebar item pada perangkat kecil */
+    }
+}
+
+@media (max-width: 480px) {
+
+    .rectangle-item,
+    .pesan-item {
+        font-size: 14px;
+        /* Mengurangi ukuran font pada perangkat kecil */
+        height: 40px;
+        /* Mengurangi tinggi item */
+    }
+}

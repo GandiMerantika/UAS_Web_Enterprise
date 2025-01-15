@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/*
+.navbar-collapse {
+    background: linear-gradient(90deg, #46074E 0%, #197BD0 80%);
+    color: #fff;
+    padding: 10px 20px;
+    Atur padding agar terlihat rapi
+
+} */
+
+.custom-navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, #46074E 0%, #197BD0 80%);
+    color: white;
+    z-index: 1000;
+
+}
+
+.custom-container {
+    padding: 0;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.nav-item .nav-link {
+    color: #FFFFFF !important;
+    font-size: 15px;
+    margin: 0 10px;
+    /* Adjusted for better spacing */
+}
+
+/* Responsive styling for the navbar on smaller screens */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #ffffff !important;
+        padding: 10px;
+    }
+
+    .navbar-collapse .nav-link {
+        text-align: center;
+        color: #000000 !important;
+        /* Black text on mobile */
+    }
+
+    .navbar-collapse .nav-link:hover {
+        color: #992775 !important;
+        /* Change to white on hover */
+    }
+
+    .custom-search {
+        margin: 0 auto;
+        /* Center the search bar */
+        display: flex;
+        /* Use flex to align items */
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        width: 100%;
+        /* Full width for mobile view */
+        padding-bottom: 10px;
+        /* Padding at the bottom */
+    }
+}
+
+.custom-search {
+    width: auto;
+    /* Set a default width */
+    padding-bottom: 0;
+    /* Remove padding when not collapsed */
+}
+
+.custom-border {
+    background-color: #003366;
+    border: 2px solid transparent;
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
+}
+
+.custom-border:hover {
+    background-color: #FFFFFF;
+    /* Background changes on hover */
+    border-color: purple !important;
+    /* Purple border on hover */
+}
+
+.nav-link-custom {
+    text-decoration: none;
+    /* Remove underline */
+    color: white;
+    /* White text */
+}
+
+.custom-border:hover .nav-link-custom {
+    color: black !important;
+    /* Black text on hover */
+}
+
+.nav-link {
+    transition: color 0.5s ease;
+    /* Text color transition */
+}
+
+.nav-link:hover {
+    color: black !important;
+    /* Hover color for nav links */
+}
+
+.input-group {
+    width: 300px;
+    /* Fixed width for search bar */
+    margin-right: 20px;
+    /* Adjusted margin */
+}
+
+
+
+/* Remove padding from .container-fluid since it's removed */
+
+
+
+/* style.css */
+.about {
+    background-image: url("../img/IMG1.jpg");
+    /* Path gambar */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Agar gambar memenuhi seluruh area */
+    height: 615px;
+    position: relative;
+
+}
+
+.container h1 {
+    font-size: 3em;
+    /* Ukuran font */
+    color: #FFFFFF;
+    /* Warna teks */
+    height: 90vh;
+    /* Membuat tinggi bagian ini 100% dari viewport */
+    display: flex;
+    align-items: center;
+    /* Vertikal center */
+    justify-content: flex-start;
+    /* Mulai dari kiri */
+    padding-left: 9%;
+    /* Jarak dari sebelah kiri */
+
+}
+
+.content-box h1,
+.content-box h2 {
+    color: #4A4A4A;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.content-box p {
+    color: #4A4A4A;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.content-box {
+    max-width: 1100px;
+    /* Atur sesuai panjang maksimal yang diinginkan */
+    width: 100%;
+    /* Untuk menjaga responsivitas */
+    overflow: hidden;
+    /* Atur sesuai kebutuhan */
+    margin-top: 50px;
+}
+
+.col {
+    margin-top: 20px;
+}
+
+.img {
+    width: 485px;
+    height: 253px;
+    /* margin-left: 50px; */
+    border-radius: 6px;
+}
+
+.layanan {
+    border-color: purple !important;
+    width: 150px;
+}
+
+.custom-hr {
+    width: 1140px;
+    /* Lebar garis */
+    height: 2px;
+    /* Bobot garis */
+    background-color: #EAEAEA;
+    /* Warna garis */
+    border: none;
+    /* Hilangkan border default */
+    margin: auto;
+    /* Posisi tengah (horizontal centering) */
+
+}
+
+.rectangle {
+    width: 145px;
+    height: 40px;
+    background: linear-gradient(80deg, rgba(70, 7, 78, 0.7), rgba(25, 123, 208, 0.5));
+    font-size: 15px;
+}
+
+.pesan {
+    width: 145px;
+    height: 40px;
+    background-color: #FFFFFF;
+    font-size: 15px;
+    border-color: purple !important;
+
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    background: linear-gradient(80deg, #46074E, #197BD0);
+    display: flex;
+    justify-content: center;
+    /* Pusatkan konten secara horizontal */
+    align-items: center;
+    /* Pusatkan konten secara vertikal */
+    margin-top: 150px;
+    padding: 10px;
+    /* Tambahkan padding untuk ruang di dalam footer */
+    box-sizing: border-box;
+    /* Pastikan padding tidak mempengaruhi lebar total */
+}
+
+.footer p {
+    margin: 0;
+    /* Hapus margin default pada p */
+    font-size: 13px;
+    text-align: center;
+    /* Pusatkan teks */
+    color: white;
+    /* Pastikan teks tetap terlihat */
+}
+
+/* Media queries untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .footer {
+        height: auto;
+        /* Biarkan tinggi otomatis */
+        padding: 20px;
+        /* Tambahkan padding lebih untuk ruang */
+    }
+
+    .footer p {
+        font-size: 12px;
+        /* Kecilkan ukuran font untuk layar kecil */
+    }
+}
+
+@media (max-width: 576px) {
+    .footer p {
+        font-size: 11px;
+        /* Kecilkan ukuran font lebih lanjut untuk layar sangat kecil */
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
