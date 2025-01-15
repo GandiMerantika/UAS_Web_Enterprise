@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Responsivitas untuk Container Gambar Banner */
+.container-fluid {
+    height: 600px;
+    background-image: url("../img/artikelpage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.bg-overlay {
+    width: 100%;
+    background: linear-gradient(93deg, rgb(70, 7, 78) 0%, rgba(70, 7, 78, 0.5) 15%, rgba(70, 7, 78, 0.3) 35%, rgba(70, 7, 78, 0) 50%);
+    opacity: 0.8;
+}
+
+.bg-text {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, 0);
+    max-width: 80%;
+    text-align: center;
+    color: #fff;
+}
+
+.title {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+/* Responsivitas untuk .container-news */
+.container-news {
+    max-width: 100%;
+    padding: 1rem;
+}
+
+/* Responsivitas untuk Kartu Gambar */
+.image-card {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* Responsivitas untuk Kartu Berita */
+.news-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.news-card img {
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Responsivitas untuk Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pagination .page-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #666;
+    background-color: #f5f5f5;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.pagination .page-item.active {
+    background: linear-gradient(to right, #46074E, #197BD0);
+    color: #fff;
+    font-weight: bold;
+}
+
+.pagination .arrow {
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.pagination .arrow:hover {
+    color: #197BD0;
+}
+
+/* Responsivitas untuk Kontak */
+.container-contact {
+    padding: 2rem;
+    max-width: 100%;
+}
+
+.title-section {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .bg-text {
+        top: 50%;
+    }
+
+    .container-news {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .bg-text {
+        top: 40%;
+    }
+}
